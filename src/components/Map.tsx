@@ -4,6 +4,7 @@ import { Map as LeafletMap } from "leaflet";
 import { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
+
 interface MapProps {
   place: Place | null;
 }

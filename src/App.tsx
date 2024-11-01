@@ -3,6 +3,18 @@ import { useState } from 'react';
 import Map from "./components/Map";
 import LocationSearch from "./components/LocationSearch";
 
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import markerIcon from '/icons/marker-icon.png';
+import markerIcon2x from '/icons/marker-icon-2x.png';
+import markerShadow from '/icons/marker-shadow.png';
+
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
 function App() {
   const [place, setPlace] = useState<Place | null>(null);
