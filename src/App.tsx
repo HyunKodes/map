@@ -21,10 +21,10 @@ function App() {
 
   return (
     <div className="h-screen w-screen grid grid-cols-12">
-      <div className="col-span-3 p-2">
+      <div className="col-span-4 p-2">
         <LocationSearch onPlaceClick={(p) => setPlace(p)} />
       </div>
-      <div className="col-span-9">
+      <div className="col-span-8">
         <Map place={place}/>
       </div>
     </div>
