@@ -11,11 +11,11 @@ interface MapProps {
 export default function map({ place }: MapProps) {
   const mapRef = useRef<LeafletMap | null>(null);
 
-  useEffect( () => {
-if (mapRef.current && place) {
-    mapRef.current.flyTo([place.latitude, place.longitude]);
-}
-  }, [place])
+  useEffect(() => {
+    if (mapRef.current && place) {
+      mapRef.current.flyTo([place.latitude, place.longitude]);
+    }
+  }, [place]);
   return (
     <MapContainer
       ref={mapRef}
