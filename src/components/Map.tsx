@@ -20,7 +20,7 @@ export default function map({ place }: MapProps) {
   return (
     <MapContainer
       ref={mapRef}
-      center={[40.7, -74]}
+      center={[43.6, -79.4]}
       zoom={12}
       scrollWheelZoom
       className="h-full"
