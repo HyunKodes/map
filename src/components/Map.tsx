@@ -17,6 +17,7 @@ export default function map({ place }: MapProps) {
       mapRef.current.flyTo([place.latitude, place.longitude]);
     }
   }, [place]);
+  
   return (
     <MapContainer
       ref={mapRef}

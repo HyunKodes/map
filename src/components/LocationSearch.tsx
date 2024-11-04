@@ -39,7 +39,7 @@ export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
             <Fragment key={place.id}>
               <p className="text-sm">{place.name}</p>
               <button
-                className="bg-blue-500 text-xs text-white font-bold py-1 px-1 founded"
+                className="bg-blue-500 text-xs text-white font-bold py-1 px-1 rounded"
                 onClick={() => onPlaceClick(place)}
               >
                 Go
